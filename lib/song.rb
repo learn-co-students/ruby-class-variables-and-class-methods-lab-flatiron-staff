@@ -48,8 +48,7 @@ class Song
 
   def self.genre_count
     #iterate over original genres class variable to get number of genres
-    #iterate over the new genres array to get the genres themselves
-    #somehow match them together - use new genres array to find number of times that word shows up in the class variable array genres
+
     genre_hash = Hash.new 0
       @@genres.each do |genre_init|
         genre_hash[genre_init] += 1
@@ -58,9 +57,6 @@ class Song
   end
 
   def self.artist_count
-    #iterate over original genres class variable to get number of genres
-    #iterate over the new genres array to get the genres themselves
-    #somehow match them together - use new genres array to find number of times that word shows up in the class variable array genres
     artist_hash = Hash.new 0
     @@artists.each do |artist_init|
       artist_hash[artist_init] += 1
